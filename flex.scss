@@ -1,0 +1,87 @@
+.f-flex-box{
+    display: flex;
+    
+    // direction
+    // 默认是 row
+    &.dir-row-reverse{
+        flex-direction: row-reverse;
+    }
+    &.dir-col{
+        flex-direction: column;
+    }
+    &.dir-col-reverse{
+        flex-direction: column-reverse;
+    }
+    
+    // wrap
+    // 默认是 no-wrap
+    &.wrap{
+        flex-wrap: wrap;
+    }
+    
+    // cross-axis;
+    // 默认是 stretch
+    &.align-start{
+        align-items: flex-start;
+    }
+    &.align-center{
+        align-items: center;
+    }
+    &.align-end{
+        align-items: flex-end;
+    }
+    
+    // 默认是stretch
+    &.align-content-start{
+        align-content: flex-start;
+    }
+    &.align-content-center{
+        align-content: center;
+    }
+    &.align-content-end{
+        align-content: flex-end;
+    }
+    &.align-content-between{
+        align-content: space-between;
+    }
+    &.align-content-around{
+        align-content: space-around;
+    }
+    &.align-content-evenly{
+        align-content: space-evenly;
+    }
+
+    // main-axis
+    &.justify-between{
+        justify-content: space-between;
+    }
+    &.justify-around{
+        justify-content: space-around;
+    }
+    &.justify-evenly{
+        justify-content: space-evenly;
+    }
+    &.justify-end{
+        justify-content: flex-end;
+    }
+    
+
+    & > .flex-item{
+        flex: 1;
+    }
+    & > .align-start{
+        align-self: flex-start;
+    }
+    & > .align-center{
+        align-self: center;
+    }
+    & > .align-end{
+        align-self: flex-end;
+    }
+    & > .align-stretch{
+        align-self: stretch;
+    }
+    & > .no-shrink{
+        flex-shrink: 0;
+    }
+}
