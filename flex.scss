@@ -1,6 +1,10 @@
 .f-flex-box{
     display: flex;
     
+    &.flex-inline{
+        display: inline-flex;
+    }
+
     // direction
     // 默认是 row
     &.dir-row-reverse{
@@ -18,7 +22,10 @@
     &.wrap{
         flex-wrap: wrap;
     }
-    
+    &.wrap-reverse{
+        flex-wrap: wrap-reverse;
+    }
+
     // cross-axis;
     // 默认是 stretch
     &.align-start{
@@ -32,22 +39,22 @@
     }
     
     // 默认是stretch
-    &.align-content-start{
+    &.align-ctn-start{
         align-content: flex-start;
     }
-    &.align-content-center{
+    &.align-ctn-center{
         align-content: center;
     }
-    &.align-content-end{
+    &.align-ctn-end{
         align-content: flex-end;
     }
-    &.align-content-between{
+    &.align-ctn-between{
         align-content: space-between;
     }
-    &.align-content-around{
+    &.align-ctn-around{
         align-content: space-around;
     }
-    &.align-content-evenly{
+    &.align-ctn-evenly{
         align-content: space-evenly;
     }
 
@@ -80,6 +87,9 @@
     }
     & > .align-stretch{
         align-self: stretch;
+    }
+    & > .align-baseline{
+        align-self: baseline;
     }
     & > .no-shrink{
         flex-shrink: 0;
