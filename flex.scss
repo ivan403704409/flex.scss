@@ -78,6 +78,8 @@
 
     & > .flex-item{
         flex: 1;
+        // 默认情况下，flex项目收缩后不会低于其最小内容尺寸, 如果不设置，当缩小到最小时就不会再缩小了，如input
+        min-width: 0;
     }
     & > .align-start{
         align-self: flex-start;
